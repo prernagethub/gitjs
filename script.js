@@ -113,6 +113,33 @@ console.log("hellooooooooooo");
   
   
 
-  //3. comparison oprators ==,===, !=, !==, >, <, >=, <=
+  //3. comparison oprators(results boolean only- true/false) ==,===(type equality check oprator), !=, !==, >, <, >=, <=
+  // let a = "20";
+  // let b = 20;
+  // console.log(a==b); true
+  // console.log(a===b); false
+
+
+//   let a = "hello";
+//   let b = "world";
+
+//   console.log(a>b); false
+//   Compare the first characters of a and b:
+// 'h' (Unicode value 104) in "hello"
+// 'w' (Unicode value 119) in "world"
+  
   // 4. logical oprators &&, ||, !
+  // falsy value: false, 0 , null, undefined, '', NaN
+
+  // let a = 0;
+  // let b = 6;
+  // let c = 3;
+  // console.log(a && b && c); jaha glt value milti hai vhi ruk jata hai. 0
+  // console.log(a || b || c); jaha tak shi value milti rhti hai vha tak chlta hai 6
+  // console.log(!(1>-1));
+  
+
+  
+  
+  
 
