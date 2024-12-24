@@ -381,3 +381,77 @@
     // while -> when we dont know the number of iteration
     // for -> when we know the nimber of iterations
     // do while -> when we want to execute the loop for once
+
+    // funtion : function is chunk of code that can use multiple times ............................................
+
+// there are two types of functions
+1) static function (never change)
+2) dynamic function 
+
+//  static type programming language
+//  non-parametrized funtion (also return value)
+function funname(){
+    // body of funtion
+    console.log("test");
+}
+
+// console.log("hello")  -- print this 100 times then took space 100 times
+
+
+// for(let i=0; i<100 ;i++){
+// console.log("hello") -- print this 100 times then took time 100 times
+
+// }
+
+
+funname(); // funtion callling
+
+procedural  programming (before use conditional statement and control flow statement)
+function procedural programming
+//  function can reuse
+//  redundency(same code write multiple time)remove then use of funtion
+//  and funtion can reuse
+
+//  parametrized funtion
+function sum(a , b){  (parameters - hold the values)
+    // body of funtion
+    console.log(a+b);
+}
+
+sum(1,3); // funtion callling (arguments)
+sum(13,29); // funtion callling (arguments)
+
+
+
+// let a = sum(2,6);  a function call is replaced by the return value 
+
+
+
+//  rules of returning a value from a funtion
+
+//  1. must be a single return statement in funtion
+//  2. return statement must be the last statement in a funtion
+//  3. return statement can return only one value
+
+
+let count =5;
+
+//  impure function -> function uses external data that is not passed as  a parameter  or declared inside the funtion.
+
+function dets(){
+    count++;
+    // console.log(count);
+    return count;
+}
+
+
+// pure function
+
+function dets(c){
+   c++;
+   return c;
+    // console.log();
+}
+
+
+dets(count);
