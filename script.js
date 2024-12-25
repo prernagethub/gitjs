@@ -371,9 +371,9 @@
     //     body
     // }
 
-    let num = 120;
-    for (let i = 1; i<=num; i++) {
-        console.log(num);
+    // let num = 120;
+    for (let i = 1; i<=100; i++) {
+        console.log(i);
         
     }
 
@@ -384,16 +384,16 @@
 
     // funtion : function is chunk of code that can use multiple times ............................................
 
-// there are two types of functions
-1) static function (never change)
-2) dynamic function 
+// there are two types of functions...................
+// 1) static function (never change)
+// 2) dynamic function 
 
-//  static type programming language
+//  static type programming language................
 //  non-parametrized funtion (also return value)
-function funname(){
+// function funname(){
     // body of funtion
-    console.log("test");
-}
+//     console.log("test");
+// }
 
 // console.log("hello")  -- print this 100 times then took space 100 times
 
@@ -404,22 +404,22 @@ function funname(){
 // }
 
 
-funname(); // funtion callling
+// funname(); // funtion callling............
 
-procedural  programming (before use conditional statement and control flow statement)
-function procedural programming
+// procedural programming (before use conditional statement and control flow statement)
+// function procedural programming
 //  function can reuse
 //  redundency(same code write multiple time)remove then use of funtion
 //  and funtion can reuse
 
-//  parametrized funtion
-function sum(a , b){  (parameters - hold the values)
+//  parametrized funtion..........
+// function sum(a , b){  (parameters - hold the values)
     // body of funtion
-    console.log(a+b);
-}
+    // console.log(a+b);
+// }
 
-sum(1,3); // funtion callling (arguments)
-sum(13,29); // funtion callling (arguments)
+// sum(1,3); // funtion callling (arguments)
+// sum(13,29); // funtion callling (arguments)
 
 
 
@@ -434,24 +434,76 @@ sum(13,29); // funtion callling (arguments)
 //  3. return statement can return only one value
 
 
-let count =5;
+// let count =5;
 
 //  impure function -> function uses external data that is not passed as  a parameter  or declared inside the funtion.
 
 function dets(){
     count++;
-    // console.log(count);
+    console.log(count);
     return count;
 }
 
 
 // pure function
 
-function dets(c){
-   c++;
-   return c;
+// function dets(c){
+//    c++;
+//    return c;
     // console.log();
+// }
+
+
+// dets(count);
+
+
+// default parameterss.............................................................................
+function details(name,age,batch,city="bhopal") {
+    console.log("name is " + name);
+    console.log("my age is " + age);
+    console.log("my batch is " + batch);
+    console.log("my city is " + city);
+    return name+age
+    
+    
 }
+// console.log(details("prerna","25","mern13"));
+
+details("prerna","25","mern13")
+details("prerna","25","mern13","indore")   //override
+
+// ruless
+// 1. default parameters should be at the end parameterr
+// 2. there should be single default parameter in a functionn
 
 
-dets(count);
+// rest oprator..................................... gives an answer in array
+function hobbies(name,...h) {
+    console.log(name);
+    console.log(h);    
+}
+hobbies("john",1,2,3,3,4,4,5,6,7)
+
+// ruless
+// 1. rest oprator should be the last oprator
+// 2. only one rest oprator is allowed in a function
+
+// normal function
+function sum(a,b) {
+    return a+b;
+}
+let ress = sum(1,2);
+console.log(ress);
+
+
+
+// arrow function--- with single expression
+let funvar = (a,b) => a + b;
+let res = funvar(1,2);
+console.log(res);
+
+
+// arrow function/fat arrow function - with multiple lines
+let x = () => {
+    // multiple line statment
+};
