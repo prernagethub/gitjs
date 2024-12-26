@@ -507,3 +507,81 @@ console.log(res);
 let x = () => {
     // multiple line statment
 };
+
+// hoisting............................ 26/12/2024
+
+// on the top all the declearation and initialization are done, then the code is executed line by line after compliation.
+
+// function sayHi(){
+//     console.log("hi");   
+// }
+
+
+
+// var i;  (partially hoisted)
+
+
+
+//let i;
+//.......TDZ(temporal dead zone).........
+//i = undefind
+
+//--------------------------------------------------------------------
+//hoisting - using varible/function before decleartion 
+//normal function are fully hoisted (function with keyword "function"), variable(var) are partially hoisted, let and const are not hoised (TDZ-temporal dead zone).
+
+sayHi();
+
+
+
+function sayHi() {
+    console.log("hi");  
+}
+
+///.............................
+console.log(i);
+
+var i = 12;
+
+//////.........................
+
+// console.log(g);
+// let g = 12;
+
+//ReferenceError: Cannot access 'g' before initialization. - variable created(declare) but not initialized. 
+// ReferenceError: g is not defined. - variable not created(declare). 
+
+//.......................arrow function
+
+console.log(a);
+
+let a = () => {
+    console.log("hello world");
+    
+}
+
+// ReferenceError: Cannot access 'a' before initialization
+
+//......................................
+
+
+console.log(b);   //undefind.
+
+var b = () => {
+    console.log("hello world");
+    
+} 
+
+
+//.......................................
+
+
+console.log(c);  
+
+const c = () => {
+    console.log("hello world");
+    
+} 
+
+// ReferenceError: Cannot access 'c' before initialization
+
