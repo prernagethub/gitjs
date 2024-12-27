@@ -54,7 +54,7 @@
 // // var varname = "value" -- intialization
 // // var varname = "10" -- reintialization/updation
 
-     
+
 // // scope............................
 
 // {
@@ -94,7 +94,7 @@
 //   // let b = 6
 //   // a = a + b
 //   // a += b
-  
+
 
 //   // let a = 45;
 //   // let b = 10;
@@ -110,8 +110,8 @@
 // // console.log(a); 45
 // // console.log(b); 10
 
-  
-  
+
+
 
 //   //3. comparison oprators(results boolean only- true/false) ==,===(type equality check oprator), !=, !==, >, <, >=, <=
 //   // let a = "20";
@@ -127,7 +127,7 @@
 // //   Compare the first characters of a and b:
 // // 'h' (Unicode value 104) in "hello"
 // // 'w' (Unicode value 119) in "world"
-  
+
 //   // 4. logical oprators &&, ||, !
 //   // falsy value: false, 0 , null, undefined, '', NaN
 
@@ -230,28 +230,28 @@
 
 // if(number==1){
 //     console.log("monday");
-    
+
 // } else if (number == 2) {
 //     console.log("tuesday");
-    
+
 // } else if (number == 3) {
 //  console.log("wednesday");
- 
+
 // } else if (number==4) {
 //     console.log("thusday");
-    
+
 // } else if (number==5) {
 //     console.log("friday");
-    
+
 // } else if (number==6){
 //     console.log("saturday");
-    
+
 // } else if (number==7){
 //     console.log("sunday");
-    
+
 // } else {
 //     console.log("invalid number");
-    
+
 // }
 
 
@@ -311,7 +311,7 @@
 //     console.log("smaller than 5");
 // }
 
-    
+
 
 // && => agar ek bhi false toh sab sab false 
 // || => agar ek bhi true toh sab sab true 
@@ -326,63 +326,63 @@
 // loop body (execute the code block of loop)
 // loop updation expression(updates the loop variable)
 // loop termination (stops the loop)
-    // due to condition failure (natural termination)
-    // due to break/return keyword (forced termination)
+// due to condition failure (natural termination)
+// due to break/return keyword (forced termination)
 
 
-    // 1. entry loop (for ,while)
-    // 2. exit loop (do while)
+// 1. entry loop (for ,while)
+// 2. exit loop (do while)
 
-    // while loop syntaxx
-    // loopvar = 0
-    // while(condition){
-    //     body 
-    //     update exp
-    // }
+// while loop syntaxx
+// loopvar = 0
+// while(condition){
+//     body 
+//     update exp
+// }
 
-    // WAP to print n natural numberr
-    let n = 10;  //n natural number
-    let loopvariable = 1;  //loop variable
-    while(loopvariable <= n){
-        console.log(loopvariable);
-        loopvariable++;
-    }
+// WAP to print n natural numberr
+let n = 10;  //n natural number
+let loopvariable = 1;  //loop variable
+while (loopvariable <= n) {
+    console.log(loopvariable);
+    loopvariable++;
+}
 
-    // do whilee syntax
+// do whilee syntax
 
-    // loopvariablee = 0
-    // do {
-    //     body
-    //     update exp
-    // } while(condition)
+// loopvariablee = 0
+// do {
+//     body
+//     update exp
+// } while(condition)
 
-    // let n1 = 10;
-    // let loopvariablee = 1;
-    // do{
-    //     console.log(loopvariablee);
-    //     loopvariablee+
+// let n1 = 10;
+// let loopvariablee = 1;
+// do{
+//     console.log(loopvariablee);
+//     loopvariablee+
 
-    // } while(loopvariablee<=n1);
+// } while(loopvariablee<=n1);
 
 
-    // for loop syntax...............
+// for loop syntax...............
 
-    // for (intialization condition updation) {
-    //     body
-    // }
+// for (intialization condition updation) {
+//     body
+// }
 
-    // let num = 120;
-    for (let i = 1; i<=100; i++) {
-        console.log(i);
-        
-    }
+// let num = 120;
+for (let i = 1; i <= 100; i++) {
+    console.log(i);
 
-    // reasons
-    // while -> when we dont know the number of iteration
-    // for -> when we know the nimber of iterations
-    // do while -> when we want to execute the loop for once
+}
 
-    // funtion : function is chunk of code that can use multiple times ............................................
+// reasons
+// while -> when we dont know the number of iteration
+// for -> when we know the nimber of iterations
+// do while -> when we want to execute the loop for once
+
+// funtion : function is chunk of code that can use multiple times ............................................
 
 // there are two types of functions...................
 // 1) static function (never change)
@@ -391,7 +391,7 @@
 //  static type programming language................
 //  non-parametrized funtion (also return value)
 // function funname(){
-    // body of funtion
+// body of funtion
 //     console.log("test");
 // }
 
@@ -414,8 +414,8 @@
 
 //  parametrized funtion..........
 // function sum(a , b){  (parameters - hold the values)
-    // body of funtion
-    // console.log(a+b);
+// body of funtion
+// console.log(a+b);
 // }
 
 // sum(1,3); // funtion callling (arguments)
@@ -438,7 +438,7 @@
 
 //  impure function -> function uses external data that is not passed as  a parameter  or declared inside the funtion.
 
-function dets(){
+function dets() {
     count++;
     console.log(count);
     return count;
@@ -450,7 +450,7 @@ function dets(){
 // function dets(c){
 //    c++;
 //    return c;
-    // console.log();
+// console.log();
 // }
 
 
@@ -458,19 +458,19 @@ function dets(){
 
 
 // default parameterss.............................................................................
-function details(name,age,batch,city="bhopal") {
+function details(name, age, batch, city = "bhopal") {
     console.log("name is " + name);
     console.log("my age is " + age);
     console.log("my batch is " + batch);
     console.log("my city is " + city);
-    return name+age
-    
-    
+    return name + age
+
+
 }
 // console.log(details("prerna","25","mern13"));
 
-details("prerna","25","mern13")
-details("prerna","25","mern13","indore")   //override
+details("prerna", "25", "mern13")
+details("prerna", "25", "mern13", "indore")   //override
 
 // ruless
 // 1. default parameters should be at the end parameterr
@@ -478,28 +478,28 @@ details("prerna","25","mern13","indore")   //override
 
 
 // rest oprator..................................... gives an answer in array
-function hobbies(name,...h) {
+function hobbies(name, ...h) {
     console.log(name);
-    console.log(h);    
+    console.log(h);
 }
-hobbies("john",1,2,3,3,4,4,5,6,7)
+hobbies("john", 1, 2, 3, 3, 4, 4, 5, 6, 7)
 
 // ruless
 // 1. rest oprator should be the last oprator
 // 2. only one rest oprator is allowed in a function
 
 // normal function
-function sum(a,b) {
-    return a+b;
+function sum(a, b) {
+    return a + b;
 }
-let ress = sum(1,2);
+let ress = sum(1, 2);
 console.log(ress);
 
 
 
 // arrow function--- with single expression
-let funvar = (a,b) => a + b;
-let res = funvar(1,2);
+let funvar = (a, b) => a + b;
+let res = funvar(1, 2);
 console.log(res);
 
 
@@ -535,7 +535,7 @@ sayHi();
 
 
 function sayHi() {
-    console.log("hi");  
+    console.log("hi");
 }
 
 ///.............................
@@ -553,35 +553,85 @@ var i = 12;
 
 //.......................arrow function
 
-console.log(a);
+// console.log(a);
 
-let a = () => {
-    console.log("hello world");
-    
-}
+// let a = () => {
+//     console.log("hello world");
+
+// }
 
 // ReferenceError: Cannot access 'a' before initialization
 
 //......................................
 
 
-console.log(b);   //undefind.
+// console.log(b);   //undefind.
 
-var b = () => {
-    console.log("hello world");
-    
-} 
+// var b = () => {
+//     console.log("hello world");
+
+// }
 
 
 //.......................................
 
 
-console.log(c);  
+// console.log(c);
 
-const c = () => {
-    console.log("hello world");
-    
-} 
+// const c = () => {
+//     console.log("hello world");
+
+// }
 
 // ReferenceError: Cannot access 'c' before initialization
+
+//Array/object...............27/12/2024
+
+//primitve / non-reference / immutable data types
+//Number = 83
+// string = ""
+// boolean = true/false
+// undefind = undefind
+//Null = NUll
+//symbol = symbol
+
+//EXAmple 
+let d = 33;
+let e = d;   //the value of a is copied and passed in b
+console.log(d);
+console.log(e);
+
+d = 35;
+console.log(d);
+console.log(e);
+
+//non-primitve / refence / mutable data type
+//array = [34,'john',true,null,undefined,[1,2,3,4], {}]
+
+//Example
+
+let arr1 = [1,"maish",2,3,4,"rajput"];
+let arr2 = arr1;
+console.log(arr2);
+console.log(arr1);
+
+
+
+let obj1 = {
+    age: 23,
+    name: "Prenamm",
+    ismarried: "Node",
+    subjects: []
+};
+
+let obj2 = obj1;  //not able to copy obj1 in obj2 instead both obj1 & obj2 variable (refence ) pointing same object (two varible pointing same value)
+console.log(obj2);
+console.log(obj1);
+obj2.name = "manish"
+console.log(obj2);
+console.log(obj1);
+
+
+
+
 
