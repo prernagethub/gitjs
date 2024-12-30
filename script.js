@@ -632,6 +632,63 @@ console.log(obj2);
 console.log(obj1);
 
 
+// CRUD operation...........................................................30/12/24
+
+//  Creating  Array
+//  let arr = []
+// let arr = new array()
+//  let arr = [12, "abc" ,true , null , undefined , [] , {}, () =>{}]
+    let arr = [12,32,54,6,90,8,12,65,34,17];
+
+// console.log(arr.length); // return the length a array 
+
+// console.log(arr);
+
+// Reading array items......
+
+// console.log(arr[3]);
+// console.log(arr.at(-1)); //(read element from ending , -1 is index of last element)
+
+//  Updating aray items.....................
+//  arr[0]= 34;
+//  console.log(arr);
+
+// Delete array items,.............................
+// delete arr[0]; // this delete the value and reserved the space
+// console.log(arr);
+
+//  traversing array element..........................
+// for(let i=0; i< arr.length; i++){
+// console.log(i , " >> ", arr[i]);
+// }
+
+// for(const element of arr){
+//     console.log(element);   // read all the values of array.
+// }
+
+
+//  callback function ( callback & anonymous function jo function apne aap call ho rhe hote h)
+
+// callback function(anonymous function)
+
+// arr.forEach(function (element , index) {});
+// arr.forEach(function (element , index) console.log(2);); // print one single value.
+// console.log(arr);
+//  forEach don't return any value.
+// arr.forEach((element , index) =>{
+//     //  arr[index] = element *2; // manipulation original array
+//     console.log(index ," >> ", element);
+// });
+
+//  console.log(arr);
+// arr.forEach((element , index) =>{
+//      arr[index] = element *2; // manipulation original array
+//     console.log(index ," >> ", element);
+// });
+
+//  console.log(arr);
+
+
 
 
 
