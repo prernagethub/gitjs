@@ -610,7 +610,7 @@ console.log(e);
 
 //Example
 
-let arr1 = [1,"maish",2,3,4,"rajput"];
+let arr1 = [1, "maish", 2, 3, 4, "rajput"];
 let arr2 = arr1;
 console.log(arr2);
 console.log(arr1);
@@ -638,9 +638,9 @@ console.log(obj1);
 //  let arr = []
 // let arr = new array()
 //  let arr = [12, "abc" ,true , null , undefined , [] , {}, () =>{}]
-    let arr = [12,32,54,6,90,8,12,65,34,17];
+let arr = [12, 32, 54, 6, 90, 8, 12, 65, 34, 17];
 
-// console.log(arr.length); // return the length a array 
+// console.log(arr.length); // return the length a array
 
 // console.log(arr);
 
@@ -687,6 +687,53 @@ console.log(obj1);
 // });
 
 //  console.log(arr);
+
+
+//......................................................31/12/24
+
+//array methods
+//let arr = [12, 34, 56, 78, 98, 76, 54, 32, 10];
+
+//adding element in an array
+//push - add element at the end of array
+//unshift - add element at the begining of the array
+//push and unshift return the length of the array
+
+//let x =arr.push(1234);// mutable methods
+//let x = arr.unshift(1234);//mutable methods
+
+//removing element from an array
+//pop - remove element from the end of the array
+//shift -remove element from the begining of the array
+//pop and shift return the element that is removed
+//let x =arr.pop();//mutable methods
+//let x = arr.shift();//mutable methods
+
+//let x =arr.splice(2, 2);// mutable methods
+//let x = arr.slice(3, 6);//immutable methods
+
+
+//array methods
+//let arr = [12, 34, 56, 78, 98, 76, 54, 32, 10];
+
+
+//mapping
+//let newarr = arr.map((element, index) => {
+//return element +10;
+//});
+
+//let newarr = arr.map((e, i) => e + 10 );
+
+//filtering
+//let newarr = arr.filter((element, index) => {
+//return element > 50;
+//});
+
+//let newarr = arr.filter ((e, i) => e > 50);
+
+//Homework
+//findindex -> findindex will return the index of the first element that satisfies the cindition
+// find -> find will return the first element that satisfies the condition
 
 
 
