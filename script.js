@@ -638,7 +638,7 @@ console.log(obj1);
 //  let arr = []
 // let arr = new array()
 //  let arr = [12, "abc" ,true , null , undefined , [] , {}, () =>{}]
-let arr = [12, 32, 54, 6, 90, 8, 12, 65, 34, 17];
+// let arr = [12, 32, 54, 6, 90, 8, 12, 65, 34, 17];
 
 // console.log(arr.length); // return the length a array
 
@@ -692,15 +692,18 @@ let arr = [12, 32, 54, 6, 90, 8, 12, 65, 34, 17];
 //......................................................31/12/24
 
 //array methods
-//let arr = [12, 34, 56, 78, 98, 76, 54, 32, 10];
+let arr3 = [12, 34, 56, 78, 98, 76, 54, 32, 10];
 
-//adding element in an array
+//adding element in an array...........
 //push - add element at the end of array
 //unshift - add element at the begining of the array
 //push and unshift return the length of the array
 
-//let x =arr.push(1234);// mutable methods
-//let x = arr.unshift(1234);//mutable methods
+let xi = arr3.push(1234);// mutable methods
+console.log(xi);
+
+let xr = arr3.unshift(1234);//mutable methods
+console.log(xr);
 
 //removing element from an array
 //pop - remove element from the end of the array
@@ -734,6 +737,96 @@ let arr = [12, 32, 54, 6, 90, 8, 12, 65, 34, 17];
 //Homework
 //findindex -> findindex will return the index of the first element that satisfies the cindition
 // find -> find will return the first element that satisfies the condition
+
+//object.......................................02//1/2025
+
+//creating object..
+
+//let obj ={}
+
+let obj = {
+    name: "john",
+    age: 30,
+    city: "new york",
+};
+
+//reading object properties...
+console.log(obj.name);
+
+//let prop = "city"
+console.log(obj[prop]);
+
+//updating object properties...
+obj.name = "prerna";
+obj.country = "USA";
+console.log(obj);
+
+//deleting object properties..
+//delete obj.age;
+console.log(obj);
+
+//iterating over object properties...
+
+for (const key in obj) {
+    console.log(key, "->", obj[key]);
+}
+
+//JSON -> [{},{},{}] Array of object....................................
+let profiles = [{
+    name: "john",
+    age: 30,
+    city: "new york",
+},
+{
+    name: "john",
+    age: 30,
+    city: "new york",
+},
+{
+    name: "john",
+    age: 30,
+    city: "new york",
+}
+
+];
+console.log(typeof profiles);
+
+//JSON.stringify() -> coverts js Object to json string....
+let strprofile = JSON.stringify(profiles);
+console.log(typeof strprofile);
+
+
+//JSON.parse() -> converts JSON strong to js object....
+let objprofiles = JSON.parse(strprofile);
+console.log(typeof objprofiles);
+
+
+
+// copying objects and arrays........
+let ar = [12, 34, 56];
+// let newar = Object.assign([],ar);
+let newar = [...ar]; //spread oprator
+newar[0] = 100;
+console.log(ar);
+console.log(newar);
+
+
+
+
+let obj = { name: "priti", age: 23 };
+// let newob = Object.assign({},obj);
+let newob = [...obj];
+newob.name = "manish";
+console.log(obj);
+console.log(newob);
+
+
+
+
+
+
+
+
 
 
 
