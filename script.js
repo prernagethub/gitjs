@@ -754,7 +754,7 @@ let obj = {
 console.log(obj.name);
 
 //let prop = "city"
-console.log(obj[prop]);
+// console.log(obj[prop]);
 
 //updating object properties...
 obj.name = "prerna";
@@ -813,12 +813,60 @@ console.log(newar);
 
 
 
-let obj = { name: "priti", age: 23 };
+let obje = { name: "priti", age: 23 };
 // let newob = Object.assign({},obj);
-let newob = [...obj];
-newob.name = "manish";
-console.log(obj);
-console.log(newob);
+// let newob = [...obj];
+// newob.name = "manish";
+// console.log(obje);
+// console.log(newob);
+
+//destructuring....................................................03/01/25
+
+let arr = [12, 34, 56, 78, 98, 120];
+// let a = arr[0];
+// let b = arr[1];
+// let C = arr[2];
+// let D = arr[3];
+// let e = arr[4];
+
+// let [a,,,,ew] = arr;
+let [a, ...b] = arr;
+// console.log(a, ew);
+console.log(a, b);
+
+let detailss = {
+    name: "orerna",
+    age: 25,
+    batch: "mern13"
+}
+
+// const name = details.name;
+// const age = details.age;
+
+const { age, batch, name } = detailss;
+console.log(age, batch, name);
+
+//temlate string/........................................
+
+console.log(`name of the person is ${name} and the age is ${age}`);
+
+
+//Asynchronus.....
+
+console.log(1);    //sync
+
+setTimeout(() => {
+    console.log(2);    //async
+}, 2000);
+
+console.log(3);  //syncc
+
+
+
+
+
+
+
 
 
 
