@@ -835,7 +835,7 @@ let [a, ...b] = arr;
 console.log(a, b);
 
 let detailss = {
-    name: "orerna",
+    name: "P1zzzzzdzzzzzzzzddzrerna",
     age: 25,
     batch: "mern13"
 }
@@ -851,32 +851,80 @@ console.log(age, batch, name);
 console.log(`name of the person is ${name} and the age is ${age}`);
 
 
-//Asynchronus.....
+//Asynchronus JS.......................................
 
-console.log(1);    //sync
+// console.log(1);    //sync
 
-setTimeout(() => {
-    console.log(2);    //async
-}, 2000);
+// setTimeout(() => {
+//     console.log(2);    //async
+// }, 2000);
 
-console.log(3);  //syncc
-
-
+// console.log(3);  //syncc
 
 
+//ASYNCHRONUS FUNCTION........,,,,,,,,,,,,,,,,,,,, 06/01/25
+//settimeout  is a function that takes a function and a time in milisecond....
+//setinterval
+//promises
+//DOM
+//fetch
+//asyn await
 
 
+// counter = 0;
+// let xe = setInterval(() => {
+//     if (counter < 10) {
+//         counter++;
+//         console.log(counter);
+
+//     } else {
+//         clearInterval(xe);
+//     }
+// }, 1000);
+
+// let time = new Date().toLocaleTimeString();
+// let stop = setInterval(() => {
+//     console.log(time);
+//     time = new Date().toLocaleTimeString();
+
+// }, 1000);
+
+//dom............................................................07/01/25
 
 
+// Document object model
+//1. document -> inbuilt object given by js to access HTML/CSS data.
+//2. secletors -> use to select the specific HTML tags from the file i.e. class selector, id selector, tag selector, attribute selector.
+//3. event listners -> all the event performed by mouse/cursor is called events and the event-listeners listens the event and take the desired actions according to the developer. 
 
 
+// const ai = document.getElementById("idName");
+// const bi = document.getElementsByClassName("className");
+// const ci = document.getElementsByTagName;
 
+// const subheading = document.querySelector(".className");
+// const subheading = document.querySelector("#idName");
 
+// const subheading = document.querySelectorAll;
 
+// reading element's data
 
+// console.log(subheading.textContent); //to get the values (tags not included)
+// console.log(subheading.innerHTML); //to get the values (tags included)
+// console.log(subheading.innerText); //to get the values (tags not included)
 
+// const h1 = document.querySelector("h1");
 
+const h1 = document.querySelector(".we")
+console.log( h1.innerHTML = "hello world bhai ");
+//  h1.innerHTML = "hello world bhai"; //will replaced the exiting content of h1
+console.log( h1.innerHTML += "kese ho?");
+ // h1.innerHTML += "kese ho?";  //will append the content of h1
 
-
-
+const button = document.querySelector(".us")
+button.addEventListener("click", () => {
+    h1.innerHTML = "hello world";
+    h1.style.color = "royalblue";
+    h1.style.fontSize = "240px";
+});
 
